@@ -4,15 +4,6 @@
 <img width="1073" height="452" alt="image" src="https://github.com/user-attachments/assets/8f3307d7-dd73-4723-8861-0fdfec6e7b00" />
 
 - **Controller**：包含 DCO 與 Loop Filter。
-- **DCO（Digitally Controlled Oscillator）**：
-  - 採二進制控制架構，共使用 6 條 Coarse 線控制多組 Buffer Bank。
-  - 每條線控制 2ⁿ 台 Buffer（`Coarse_0` 控制 1 台，`Coarse_6` 控制 64 台）。
-  - 採「三行並聯」架構，提升穩定性與線性度。
-- **Loop Filter**：
-  - 由 `ANCHOR_reg`、`up_counter`、`down_counter` 組成。
-  - 當 `freq_lock` 時，將 `dco_code` 寫入 `ANCHOR_reg`。
-  - 當連續 4 次同方向計數，更新 `ANCHOR_reg`（++ 或 --）。
-  - 當偵測到 `polarity` 改變時，更新 `dco_code`。
 - **Monitor**：輸入 REF_CLK、M、Reset 等控制信號。
 - **Divider**：計數式除頻器。
 - **PFD（Phase Frequency Detector）**：相位頻率偵測器。
