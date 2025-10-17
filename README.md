@@ -11,7 +11,7 @@
 ## Function Behavior 波型圖展示：
 <img width="1136" height="212" alt="image" src="https://github.com/user-attachments/assets/7f6a9cef-8cc2-48db-ac5c-04217ce6dfdd" />
 
-## 混合訊號波型(DCO、PFD為Analog，其餘為Digital)展示：
+## 混合訊號波型(DCO、PFD為SPICE，其餘為Verilog)展示：
 <img width="1203" height="315" alt="image" src="https://github.com/user-attachments/assets/0fb90241-b521-4aeb-92e1-2bd1f54948c1" />
 
 - 其中擷取某段放大後，Phase_clk 為 REF_CLK。
